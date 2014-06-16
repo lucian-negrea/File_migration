@@ -8,6 +8,7 @@ package main;
 
 import gui.MainForm;
 import gui.ProcessingForm;
+import java.awt.GraphicsEnvironment;
 
 /**
  *
@@ -19,6 +20,9 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        if(GraphicsEnvironment.isHeadless()){
+            System.out.println("This application can be used in GUI mode only!");
+        }else{
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -48,6 +52,7 @@ public class Main {
                 new MainForm().setVisible(true);
             }
         });
+        }
     }
     
 }
