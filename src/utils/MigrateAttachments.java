@@ -14,8 +14,6 @@ import java.util.Date;
 import java.util.List;
 import javax.swing.DefaultListModel;
 import javax.swing.SwingWorker;
-import obspattern.BugListener;
-import obspattern.BugSubiect;
 import org.apache.commons.io.FileUtils;
 
 /**
